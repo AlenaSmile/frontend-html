@@ -1,0 +1,307 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 240, 247);
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    width: 82%;
+    /* Ширина как у nav */
+    margin: 0 auto;
+    /* Центрирование */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 9%;
+}
+
+.header-left img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.calculate-cost {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav.main-nav {
+    background-color: white;
+    padding: 10px 0;
+    width: 82%;
+    /* Ширина как у .content */
+    margin: 0 auto;
+    /* Центрирование */
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    /* Равномерное распределение ссылок */
+    gap: 10px;
+    /* Уменьшение отступов между ссылками */
+}
+
+.nav-content a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    /* Уменьшение отступов вокруг текста ссылок */
+    transition: background-color 0.3s ease;
+    /* Плавный переход для изменения цвета */
+}
+
+.nav-content a:hover {
+    background-color: rgb(123, 195, 213);
+    /* Цвет при наведении курсора */
+    color: white;
+    /* Цвет текста при наведении */
+}
+
+.container {
+    width: 82%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /* Ensure items align to the top */
+}
+
+.left-menu {
+    width: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.left-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu li {
+    margin: 10px 0;
+}
+
+.left-menu a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.product-description,
+.additional-info,
+.reviews-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-description {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-description h2 {
+    margin: 0 0 20px 0;
+}
+
+.product-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /* Выравнивание элементов по верхнему краю */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    /* Отступ справа от контейнера изображения */
+}
+
+.window-image {
+    width: 100%;
+    /* Ширина изображения */
+    height: auto;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.color-selection {
+    margin-top: 20px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.calculate-discount {
+    background-color: rgb(235, 88, 37);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    /* Уменьшим ширину кнопки */
+}
+
+.calculate-discount:hover {
+    background-color: #d8752f;
+}
+
+.image-caption {
+    margin-top: 10px;
+    /* Отступ сверху от подписи к изображению */
+    font-style: italic;
+    font-size: 12px;
+}
+
+.color-selection {
+    margin-top: 20px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+.additional-info ul h2 {
+    list-style: none;
+    padding: 20px;
+}
+
+.additional-info h2 {
+    padding-left: 20px;
+}
+
+.reviews-section .review {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.reviews-section .review p {
+    margin: 5px 0;
+}
+
+.reviews-section .review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.calculate-discount,
+.leave-review {
+    background-color: rgb(235, 88, 37);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculate-discount:hover,
+.leave-review:hover {
+    background-color: #d8752f;
+}
+
+.calculate-cost,
+.nav-content a,
+.small-text a,
+.view-more,
+.read-more {
+    color: #888;
+    /* Серый цвет */
+    transition: color 0.3s ease;
+    /* Плавный переход для изменения цвета */
+}
+
+
+/* Цвет при наведении */
+
+.calculate-cost:hover,
+.small-text a:hover,
+.view-more:hover,
+.read-more:hover {
+    color: rgb(243, 98, 64);
+    /* Цвет при наведении */
+}
+
+.left-menu a {
+    color: #888;
+    /* Серый цвет */
+    transition: color 0.3s ease;
+    /* Плавный переход для изменения цвета */
+}
+
+
+/* Цвет при наведении */
+
+.left-menu a:hover {
+    color: rgb(243, 98, 64);
+    /* Цвет при наведении */
+}
